@@ -1,0 +1,45 @@
+<%= render 'shared/navbar', back_link: categories_path, title:"TRANSACTION" %>
+
+<div class="category-section">
+  <div class="category-header">
+    <div class="category-header-title">
+      <div class="cat-detail">
+        <div class="category-icon">
+          <%= content_tag :i, "", class: "fa #{@category.icon}" %>
+        </div>  
+        <div class="category-name">
+          <%= @category.name %>
+        </div>
+      </div>
+      <div class="author-container">
+        <div class="category-author">
+          <%= @category.author.name %>
+        </div>
+      </div>
+    </div>
+    
+    <div class="category-amount">
+      $ <%= @category.items.sum(:amount) %>
+    </div>
+    
+  </div>
+
+  <div class="items-list">
+    <% @items.each do |item| %>
+      <div class="item">
+        <div class="item-section">
+          <div class="item-name">
+            <%= item.name %>
+          </div>
+          <div class="item-amount">
+            $ <%= item.amount %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="add-btn">
+    <%= link_to 'ADD TRANSACTION', new_category_item_path(@category), class: "add-link" %>
+  </div>
+</div>

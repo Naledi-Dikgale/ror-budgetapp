@@ -1,0 +1,18 @@
+<div class="item-form-container">
+  <%= form_for(@item, url: category_items_path(@category), method: :post, html: { class: "item-form" }) do |f| %>
+    <div class="input-field">
+      <%= f.text_field :name,  placeholder: "Enter name" %>
+    </div>
+
+    <br>
+    
+    <div class="input-field">
+      <%= f.number_field :amount, placeholder: "Enter amount" %>
+    </div>
+
+  <div class="add-btn">
+    <%= f.submit "Create Item" %>
+  </div>
+  <% end %>
+</div>
+

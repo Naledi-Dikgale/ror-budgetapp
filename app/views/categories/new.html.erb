@@ -1,0 +1,17 @@
+<%= render 'shared/navbar', back_link: categories_path, title:"New Category" %>
+
+<%=form_for @category, html: {class:""} do |f| %>
+  <div class="input-field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="input-field">
+    <%= f.label :icon %>
+    <%= f.select :icon, Category::ICONS.invert, { include_blank: true }, { required: true, class: "" } %>
+  </div>
+
+  <div class="add-btn">
+    <%= f.submit %>
+  </div>
+<% end %>
