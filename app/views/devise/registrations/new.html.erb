@@ -1,0 +1,32 @@
+<%= render 'shared/navbar', back_link: unauthenticated_root_path, title:"REGISTER" %>
+<div class="reg-form login-form">
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+      <%= f.text_field :name, placeholder: "Name", autofocus: true, autocomplete: "name" %>
+    </div>
+
+    <div class="field">
+      <%= f.email_field :email, placeholder: "Email Address", autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password, placeholder: "Password", autocomplete: "new-password" %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password_confirmation, placeholder: "Confirn password", autocomplete: "new-password" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Sign up" %>
+    </div>
+  <% end %>
+
+  <div class="shared_links">
+    <%= render "devise/shared/links" %>
+  </div>
+</div>
