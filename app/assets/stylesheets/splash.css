@@ -1,0 +1,48 @@
+.splash-screen {
+  margin: 4rem auto;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.app-title {
+  color: #434b54;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 2.5rem;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 5px;
+}
+
+.login-button {
+  display: block;
+  width: 90vw;
+  margin: 5px auto;
+  padding: 10px;
+  background-color: #3778c2;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.signup-button {
+  display: block;
+  width: 90vw;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: white;
+  color: #434b54;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+}
