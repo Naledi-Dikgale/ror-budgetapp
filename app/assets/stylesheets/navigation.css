@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.offcanvas {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  color: #fff;
+  padding: 20px;
+  transition: left 0.3s ease-in-out;
+  backdrop-filter: blur(5px);
+  background-image: linear-gradient(to right, rgba(62, 130, 145, 0.9), rgba(55, 120, 194, 0.9));
+}
+
+.offcanvas.show {
+  left: 0;
+}
+
+.offcanvas-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.offcanvas-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+hr {
+  border: 0.5px solid #fff;
+  width: 100%;
+}
+
+.close-btn {
+  font-size: 1.3rem;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3778c2;
+  color: #fff;
+  height: 70px;
+}
+
+.main-header h1 {
+  font-size: 1.3rem;
+}
+
+.icon-btn {
+  font-size: 1.3rem;
+  width: 40px;
+  border: none;
+  background-color: #3778c2;
+  color: #fff;
+}
+
+.fa-arrow-left {
+  margin-left: 20px;
+}
+
+.text-end {
+  padding: 10px;
+  border: none;
+  background-color: #3778c2;
+  color: #fff;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.actions a {
+  text-decoration: none;
+  color: #fff;
+}

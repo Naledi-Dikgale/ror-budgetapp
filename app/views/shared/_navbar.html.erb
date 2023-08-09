@@ -1,0 +1,26 @@
+<header class="main-header">
+  <% if back_link %>
+    <a href="<%= back_link %>" class="icon-btn">
+      <i class="fa fa-arrow-left fa-lg"></i>
+    </a>
+  <% else %>
+    <!-- Add a button to trigger the offcanvas menu -->
+      <button type="button" class="icon-btn" id="toggleMenu">
+    <i class="fa fa-bars"></i>
+  </button>
+  <% end %>
+  <h1><%= title.upcase %></h1>
+  <% if user_signed_in? %>
+    <%= button_to destroy_user_session_path, method: :delete, class: "icon text-end" do %>
+      <i class="fa fa-user"></i> Logout
+    <% end %>
+  <% elsif controller_name != 'sessions' %>
+    <%= link_to new_user_session_path, class: "icon text-end" do %>
+      <div>Next</div>
+    <% end %>
+  <% else %>
+    <%= link_to new_user_registration_path, class: "icon text-end" do %>
+      <i class="fa fa-user-plus"></i>
+    <% end %>
+  <% end %>
+</header>

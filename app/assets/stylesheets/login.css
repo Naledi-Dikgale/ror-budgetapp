@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  height: 3.5rem;
+  margin-bottom: 10px;
+  background-color: #3778c2;
+}
+
+.header h1 {
+  color: white;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.header .back-icon {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="password"] {
+  width: 100vw;
+  height: 3rem;
+  padding: 10px;
+  border: 1px solid #dfdede;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: #080808;
+  margin: 5px auto;
+}
+
+.field input[type="text"]::placeholder,
+.field input[type="email"]::placeholder,
+.field input[type="password"]::placeholder {
+  color: #9c9b9b;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #3778c2;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Styles for links in the form */
+.field a {
+  text-decoration: none;
+  color: #434b54;
+}
+
+.shared_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}

@@ -1,0 +1,101 @@
+.categories-page,
+.category-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categories-page a,
+.items-list,
+.category-header {
+  text-decoration: none;
+  color: #333;
+  width: 95%;
+  max-width: 500px;
+}
+
+.category,
+.item-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  background-color: #fff;
+  min-height: 75px;
+  padding: 0 10px;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cat-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #5fb523;
+  padding: 0.5rem 0;
+}
+
+.add-btn a {
+  padding: 0.5rem 5rem;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+}
+
+.add-btn input[type="submit"] {
+  padding: 0.5rem 5rem;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.input-field input[type="number"] {
+  width: 90%;
+  height: 3rem;
+  padding: 10px;
+  border: 1px solid #dfdede;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: #080808;
+  margin: 5px auto;
+}
+
+.input-field input[type="text"] {
+  width: 90%;
+  height: 3rem;
+  padding: 10px;
+  border: 1px solid #dfdede;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: #080808;
+  margin: 5px auto;
+}
+
+form {
+  padding: 0 10px;
+}

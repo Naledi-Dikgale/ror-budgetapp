@@ -1,0 +1,23 @@
+<%= render 'shared/navbar', back_link: unauthenticated_root_path, title:"LOGIN" %>
+
+<div class="login-form">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  
+    <div class="field">
+      <%= f.email_field :email, placeholder: "Email Address", autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password, placeholder: "Password", autocomplete: "current-password" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Login" %>
+    </div>
+
+  <% end %>
+  <div class="shared_links">
+    <%= render "devise/shared/links" %>
+  </div>
+</div>
+
