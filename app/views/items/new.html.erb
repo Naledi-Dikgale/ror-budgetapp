@@ -1,13 +1,13 @@
 <div class="item-form-container">
   <%= form_for(@item, url: category_items_path(@category), method: :post, html: { class: "item-form" }) do |f| %>
     <div class="input-field">
-      <%= f.text_field :name,  placeholder: "Enter name" %>
+      <%= f.text_field :name,  placeholder: "Enter name", required: true %>
     </div>
 
     <br>
     
     <div class="input-field">
-      <%= f.number_field :amount, placeholder: "Enter amount" %>
+      <%= f.number_field :amount, placeholder: "Enter amount", required: true %>
     </div>
 
   <div class="add-btn">

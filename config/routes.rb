@@ -9,7 +9,6 @@ Rails.application.routes.draw do
   unauthenticated do
     root "splash_screen#index", as: :unauthenticated_root
   end
-  # root "splash_screen#index"
   resources :categories, only: [:index, :new, :show, :create] do
     resources :items, only: [:index, :new, :create]
   end

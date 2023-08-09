@@ -3,7 +3,7 @@
 <%=form_for @category, html: {class:""} do |f| %>
   <div class="input-field">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, {required: true} %>
   </div>
 
   <div class="input-field">
