@@ -105,7 +105,7 @@ To run tests, run the following command: Install through : gem install rspec
 ```
 
 
-👤 **Author1**
+👤 **Author**
  *[NALEDI DIKGALE]*
  
 - GitHub: [@githubhandle](https://github.com/Naledi-Dikgale)
